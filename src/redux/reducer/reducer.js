@@ -13,7 +13,7 @@ function reducer(state = initialState, action) {
   } else if (action.type === "DECREMENT") {
     return { ...state, count: state.count - 1 };
   } else if (action.type === "RESET") {
-    return { ...state, count: 0 };
+    return { ...state, count: 0, name: "", text: "" };
   } else if (action.type === "LOGIN") {
     return { ...state, name: action.payload.name, text: action.payload.text };
   }
